@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Tab Three
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-list>
+    <ion-item *ngFor="let contt of contatos">
+      <ion-avatar item-start>
+        <img src="{{contt.img}}">
+      </ion-avatar>
+      <h2>{{contt.nome}}</h2>
+      <p>{{contt.msg}}</p>
+    </ion-item>
+  </ion-list>
+
+</ion-content>
